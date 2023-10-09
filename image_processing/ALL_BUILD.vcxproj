@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{28F4CFD8-92B3-3E10-954C-45F7C9B7AFC5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Arrayfire v10\examples\image_processing\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Arrayfire v10/examples/image_processing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/image_processing/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Arrayfire v10\examples\build\image_processing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Arrayfire v10/examples/image_processing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/image_processing/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Arrayfire v10\examples\build\image_processing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Arrayfire v10/examples/image_processing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/image_processing/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Arrayfire v10\examples\build\image_processing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Arrayfire v10/examples/image_processing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/image_processing/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Arrayfire v10\examples\build\image_processing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\ZERO_CHECK.vcxproj">
+      <Project>{AAD07D42-7BEF-364E-A642-1182DDF22A69}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\adaptive_thresholding_cpu.vcxproj">
+      <Project>{4C99A5C9-D194-3BE3-AD8E-916C3EFA0D96}</Project>
+      <Name>adaptive_thresholding_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\adaptive_thresholding_cuda.vcxproj">
+      <Project>{EC0721B2-0873-36F0-8086-CEF6DED12F6C}</Project>
+      <Name>adaptive_thresholding_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\adaptive_thresholding_opencl.vcxproj">
+      <Project>{44B9D998-A9A1-3B86-B173-2DF5FD5244B8}</Project>
+      <Name>adaptive_thresholding_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\binary_thresholding_cpu.vcxproj">
+      <Project>{A2ABBA4C-908D-3A39-91DC-39553E125E6B}</Project>
+      <Name>binary_thresholding_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\binary_thresholding_cuda.vcxproj">
+      <Project>{30DB8A12-A4EB-38C0-987D-3722E6954165}</Project>
+      <Name>binary_thresholding_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\binary_thresholding_opencl.vcxproj">
+      <Project>{F1EFCDEF-B4E2-3122-A9E2-74B8D2AC39C2}</Project>
+      <Name>binary_thresholding_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\brain_segmentation_cpu.vcxproj">
+      <Project>{D4DD79F7-3795-3C09-96CC-4EF6BE23C9A2}</Project>
+      <Name>brain_segmentation_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\brain_segmentation_cuda.vcxproj">
+      <Project>{9720D2A1-2AE0-392B-9B51-FCD58DD0AFF5}</Project>
+      <Name>brain_segmentation_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\brain_segmentation_opencl.vcxproj">
+      <Project>{8F45ABB3-0E28-3FD8-8346-24FF4D91DE1F}</Project>
+      <Name>brain_segmentation_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\confidence_connected_components_cpu.vcxproj">
+      <Project>{18DCBFF9-9DEE-3B28-9CA5-C58D4BB256CA}</Project>
+      <Name>confidence_connected_components_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\confidence_connected_components_cuda.vcxproj">
+      <Project>{20D5FC1E-F704-30E7-AB9D-EE669583F7FB}</Project>
+      <Name>confidence_connected_components_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\confidence_connected_components_opencl.vcxproj">
+      <Project>{154A3496-8A1B-37AA-8392-638FAE925B76}</Project>
+      <Name>confidence_connected_components_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\deconvolution_cpu.vcxproj">
+      <Project>{161074A3-FB97-3519-9566-80CF0EA9153B}</Project>
+      <Name>deconvolution_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\deconvolution_cuda.vcxproj">
+      <Project>{052B287E-A260-3D5B-9CE3-1E91BA8CAA32}</Project>
+      <Name>deconvolution_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\deconvolution_opencl.vcxproj">
+      <Project>{94354331-8585-3C2A-9A64-4AB7B18C9378}</Project>
+      <Name>deconvolution_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\edge_cpu.vcxproj">
+      <Project>{EE2711A3-B50D-3A4F-9B58-66AB258A7D74}</Project>
+      <Name>edge_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\edge_cuda.vcxproj">
+      <Project>{21107738-AAFB-3BEE-BCF6-B28AFE517751}</Project>
+      <Name>edge_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\edge_opencl.vcxproj">
+      <Project>{D2A59F07-23D0-30D6-A686-C1BFC0635131}</Project>
+      <Name>edge_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\filters_cpu.vcxproj">
+      <Project>{29A2BFD7-11F7-30D5-8FA7-7ACF8301F50C}</Project>
+      <Name>filters_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\filters_cuda.vcxproj">
+      <Project>{1B129AF9-DCA1-3D1F-8CAA-D49B3F414C38}</Project>
+      <Name>filters_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\filters_opencl.vcxproj">
+      <Project>{2A3618F3-7895-397A-A9D5-D9668D6ECAAB}</Project>
+      <Name>filters_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\gradient_diffusion_cpu.vcxproj">
+      <Project>{C0F48D0F-13D4-3D96-827F-27053D4323FA}</Project>
+      <Name>gradient_diffusion_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\gradient_diffusion_cuda.vcxproj">
+      <Project>{B43C9B9F-6211-34FF-9246-D762C7FF147C}</Project>
+      <Name>gradient_diffusion_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\gradient_diffusion_opencl.vcxproj">
+      <Project>{C3950857-FDA7-35DF-9D1F-6850EF7CC87E}</Project>
+      <Name>gradient_diffusion_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_demo_cpu.vcxproj">
+      <Project>{8FC0C8E2-5757-3F1C-8C88-7FD87F52D765}</Project>
+      <Name>image_demo_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_demo_cuda.vcxproj">
+      <Project>{C3B1AD05-5C60-37DD-8AB2-D88786E46ABD}</Project>
+      <Name>image_demo_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_demo_opencl.vcxproj">
+      <Project>{6E88AA4C-A04B-3C90-BCD1-0DB26C0346F5}</Project>
+      <Name>image_demo_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_editing_cpu.vcxproj">
+      <Project>{B20DA179-B207-3C04-ADF4-796BA0FB9FA8}</Project>
+      <Name>image_editing_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_editing_cuda.vcxproj">
+      <Project>{6732C3EC-EF7F-3363-ADE9-C55BDA68E1E9}</Project>
+      <Name>image_editing_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_editing_opencl.vcxproj">
+      <Project>{18D288B5-C873-3A6F-AF1B-1AC3503F56C0}</Project>
+      <Name>image_editing_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\morphing_cpu.vcxproj">
+      <Project>{00332855-2230-3C22-8327-66A2DEAFA51B}</Project>
+      <Name>morphing_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\morphing_cuda.vcxproj">
+      <Project>{F99B2C50-2044-302D-BEA7-95192CA17B97}</Project>
+      <Name>morphing_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\morphing_opencl.vcxproj">
+      <Project>{26BBB215-B6BE-364D-8A21-5B637FC03D80}</Project>
+      <Name>morphing_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\optical_flow_cpu.vcxproj">
+      <Project>{B73ACD3D-A669-34A3-BAB6-2D07EBE7FA59}</Project>
+      <Name>optical_flow_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\optical_flow_cuda.vcxproj">
+      <Project>{5B91FCC9-2622-3D9D-90BA-07AADB3DD1CD}</Project>
+      <Name>optical_flow_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\optical_flow_opencl.vcxproj">
+      <Project>{E0EA6B5B-1DA0-3A6C-B117-D5257A5DAD67}</Project>
+      <Name>optical_flow_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\pyramids_cpu.vcxproj">
+      <Project>{8DE54261-797E-3D85-BC6E-5EC05DAD2E6A}</Project>
+      <Name>pyramids_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\pyramids_cuda.vcxproj">
+      <Project>{44957ACC-FEF3-3060-A07D-9263A5AE8891}</Project>
+      <Name>pyramids_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\pyramids_opencl.vcxproj">
+      <Project>{1A27B471-5870-3788-BEDB-9C60926ACEDA}</Project>
+      <Name>pyramids_opencl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

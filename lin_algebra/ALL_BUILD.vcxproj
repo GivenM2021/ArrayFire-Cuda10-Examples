@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{28F4CFD8-92B3-3E10-954C-45F7C9B7AFC5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Arrayfire v10\examples\lin_algebra\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Arrayfire v10/examples/lin_algebra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/lin_algebra/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Arrayfire v10\examples\build\lin_algebra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Arrayfire v10/examples/lin_algebra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/lin_algebra/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Arrayfire v10\examples\build\lin_algebra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Arrayfire v10/examples/lin_algebra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/lin_algebra/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Arrayfire v10\examples\build\lin_algebra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Arrayfire v10/examples/lin_algebra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/lin_algebra/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Arrayfire v10\examples\build\lin_algebra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\ZERO_CHECK.vcxproj">
+      <Project>{AAD07D42-7BEF-364E-A642-1182DDF22A69}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\bagging_cpu.vcxproj">
+      <Project>{B2E35C4A-9193-3CEF-82D6-EC3024D938F9}</Project>
+      <Name>bagging_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\bagging_cuda.vcxproj">
+      <Project>{F1C75ACC-091E-3B45-A820-52B97327D3B4}</Project>
+      <Name>bagging_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\bagging_opencl.vcxproj">
+      <Project>{0350A9F7-183D-3E5E-9E1F-1A3C4886CCE8}</Project>
+      <Name>bagging_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\cholesky_cpu.vcxproj">
+      <Project>{E113D73C-C2A7-367B-96E9-F1B7A177D222}</Project>
+      <Name>cholesky_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\cholesky_cuda.vcxproj">
+      <Project>{890C4AEC-F8F2-3F54-A9C9-A10D33F5F0FF}</Project>
+      <Name>cholesky_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\cholesky_opencl.vcxproj">
+      <Project>{D5C57203-B6C0-329D-925D-637A94259129}</Project>
+      <Name>cholesky_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\deep_belief_net_cpu.vcxproj">
+      <Project>{D9A074E0-D084-3CC9-8149-ABCB073D0C3A}</Project>
+      <Name>deep_belief_net_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\deep_belief_net_cuda.vcxproj">
+      <Project>{F1CE9053-0F74-3892-9BA3-C0FE0AA0941B}</Project>
+      <Name>deep_belief_net_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\deep_belief_net_opencl.vcxproj">
+      <Project>{5BB9DE2A-E391-3306-8B46-ECBB07A9E58B}</Project>
+      <Name>deep_belief_net_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\geneticalgorithm_cpu.vcxproj">
+      <Project>{AEF6250F-F206-3B49-93D2-3ED72B26E50E}</Project>
+      <Name>geneticalgorithm_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\geneticalgorithm_cuda.vcxproj">
+      <Project>{7D2E21C5-46FD-3220-8329-FB09C5E656DC}</Project>
+      <Name>geneticalgorithm_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\geneticalgorithm_opencl.vcxproj">
+      <Project>{9FC8C613-0688-3A0A-AE86-7E6098B4F5EF}</Project>
+      <Name>geneticalgorithm_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\kmeans_cpu.vcxproj">
+      <Project>{1F0082F5-3FC5-3902-8CF2-C50D8F4FB87E}</Project>
+      <Name>kmeans_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\kmeans_cuda.vcxproj">
+      <Project>{D545CAD3-9ADB-3B3F-924E-548B77C505A6}</Project>
+      <Name>kmeans_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\kmeans_opencl.vcxproj">
+      <Project>{612EBD96-F068-346A-84D8-9A9A7DF13EF2}</Project>
+      <Name>kmeans_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\logistic_regression_cpu.vcxproj">
+      <Project>{EBD7A94C-6F1F-3A43-A9DE-8852B14C6874}</Project>
+      <Name>logistic_regression_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\logistic_regression_cuda.vcxproj">
+      <Project>{E567B392-6FBB-399D-AED3-82E529A72432}</Project>
+      <Name>logistic_regression_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\logistic_regression_opencl.vcxproj">
+      <Project>{A6B0C6E7-60B4-3224-A2EC-0EF7B6842A31}</Project>
+      <Name>logistic_regression_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\lu_cpu.vcxproj">
+      <Project>{99611E6F-7D78-3725-95C0-C967B59D379C}</Project>
+      <Name>lu_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\lu_cuda.vcxproj">
+      <Project>{1EC518B6-9BA3-3EFB-AA34-9DC95AE17A8C}</Project>
+      <Name>lu_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\lu_opencl.vcxproj">
+      <Project>{2D9BCAD5-6BA6-3028-B333-7CDEA84D63B4}</Project>
+      <Name>lu_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\naive_bayes_cpu.vcxproj">
+      <Project>{FCB85F1D-F1CD-3ABE-8F44-851CC106FAF5}</Project>
+      <Name>naive_bayes_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\naive_bayes_cuda.vcxproj">
+      <Project>{16EDBD46-CD65-3EEE-822E-703E67713A76}</Project>
+      <Name>naive_bayes_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\naive_bayes_opencl.vcxproj">
+      <Project>{DF8E7D08-2B80-39C0-8D81-63BD1C3A1731}</Project>
+      <Name>naive_bayes_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\neural_network_cpu.vcxproj">
+      <Project>{81B47E15-3CA9-305F-A528-7CF5A4F39794}</Project>
+      <Name>neural_network_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\neural_network_cuda.vcxproj">
+      <Project>{DBBADD3C-2B4A-3F59-AB5E-992915034E45}</Project>
+      <Name>neural_network_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\neural_network_opencl.vcxproj">
+      <Project>{E032F9C2-8BB2-37AC-9B26-14B85FAC4976}</Project>
+      <Name>neural_network_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\perceptron_cpu.vcxproj">
+      <Project>{D57DD231-8B6E-3239-BF49-BFB5CF79938F}</Project>
+      <Name>perceptron_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\perceptron_cuda.vcxproj">
+      <Project>{33DEC6B4-49AB-3513-A792-F82A992F23EB}</Project>
+      <Name>perceptron_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\perceptron_opencl.vcxproj">
+      <Project>{AE03FF90-2BB7-313E-9260-3C2103DB0ED0}</Project>
+      <Name>perceptron_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\qr_cpu.vcxproj">
+      <Project>{730C64E2-8C79-321E-B9A9-359A8A74EFA0}</Project>
+      <Name>qr_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\qr_cuda.vcxproj">
+      <Project>{CE61A351-8111-3529-92DC-4754BA6631A7}</Project>
+      <Name>qr_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\qr_opencl.vcxproj">
+      <Project>{5BE99453-D82D-3B47-B02D-57F1F4662890}</Project>
+      <Name>qr_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\rbm_cpu.vcxproj">
+      <Project>{A8EEB37A-D1C3-33E8-9BD8-DABDC46AD3BA}</Project>
+      <Name>rbm_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\rbm_cuda.vcxproj">
+      <Project>{BFF86536-7177-3834-88D5-63228DCE8F2D}</Project>
+      <Name>rbm_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\rbm_opencl.vcxproj">
+      <Project>{95234E79-AFE4-3FB5-A785-4E0F37FF107F}</Project>
+      <Name>rbm_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\softmax_regression_cpu.vcxproj">
+      <Project>{BDCDC859-1896-3F15-9174-4B7A3B8E9654}</Project>
+      <Name>softmax_regression_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\softmax_regression_cuda.vcxproj">
+      <Project>{18F562FA-D895-34BD-929F-53DB415AA144}</Project>
+      <Name>softmax_regression_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\softmax_regression_opencl.vcxproj">
+      <Project>{C9DA4A48-C050-336D-9CFF-0941D93439F6}</Project>
+      <Name>softmax_regression_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\svd_cpu.vcxproj">
+      <Project>{790AEB05-6461-357C-A3BB-A34538DE3A47}</Project>
+      <Name>svd_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\svd_cuda.vcxproj">
+      <Project>{5A0F59FA-46CE-3787-B272-28BAAE74FCBD}</Project>
+      <Name>svd_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\svd_opencl.vcxproj">
+      <Project>{543B1471-6A81-383A-A35B-FEF7F933DA89}</Project>
+      <Name>svd_opencl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

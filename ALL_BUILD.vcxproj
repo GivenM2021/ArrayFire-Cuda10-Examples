@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{28F4CFD8-92B3-3E10-954C-45F7C9B7AFC5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Arrayfire v10\examples\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Arrayfire v10/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;C:\dev\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Arrayfire v10\examples\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Arrayfire v10/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;C:\dev\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Arrayfire v10\examples\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Arrayfire v10/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;C:\dev\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Arrayfire v10\examples\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Arrayfire v10/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;C:\Arrayfire v10\examples\build\CMakeFiles\3.26.3\CMakeSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;C:\dev\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\dev\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Arrayfire v10\examples\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\ZERO_CHECK.vcxproj">
+      <Project>{AAD07D42-7BEF-364E-A642-1182DDF22A69}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\adaptive_thresholding_cpu.vcxproj">
+      <Project>{4C99A5C9-D194-3BE3-AD8E-916C3EFA0D96}</Project>
+      <Name>adaptive_thresholding_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\adaptive_thresholding_cuda.vcxproj">
+      <Project>{EC0721B2-0873-36F0-8086-CEF6DED12F6C}</Project>
+      <Name>adaptive_thresholding_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\adaptive_thresholding_opencl.vcxproj">
+      <Project>{44B9D998-A9A1-3B86-B173-2DF5FD5244B8}</Project>
+      <Name>adaptive_thresholding_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\bagging_cpu.vcxproj">
+      <Project>{B2E35C4A-9193-3CEF-82D6-EC3024D938F9}</Project>
+      <Name>bagging_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\bagging_cuda.vcxproj">
+      <Project>{F1C75ACC-091E-3B45-A820-52B97327D3B4}</Project>
+      <Name>bagging_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\bagging_opencl.vcxproj">
+      <Project>{0350A9F7-183D-3E5E-9E1F-1A3C4886CCE8}</Project>
+      <Name>bagging_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\unified\basic_unified.vcxproj">
+      <Project>{E521ECD8-B900-3356-8670-E67F52E095DE}</Project>
+      <Name>basic_unified</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\binary_thresholding_cpu.vcxproj">
+      <Project>{A2ABBA4C-908D-3A39-91DC-39553E125E6B}</Project>
+      <Name>binary_thresholding_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\binary_thresholding_cuda.vcxproj">
+      <Project>{30DB8A12-A4EB-38C0-987D-3722E6954165}</Project>
+      <Name>binary_thresholding_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\binary_thresholding_opencl.vcxproj">
+      <Project>{F1EFCDEF-B4E2-3122-A9E2-74B8D2AC39C2}</Project>
+      <Name>binary_thresholding_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\financial\black_scholes_options_cpu.vcxproj">
+      <Project>{5C62FB6B-2E47-3B21-8EBA-43B2E143DD41}</Project>
+      <Name>black_scholes_options_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\financial\black_scholes_options_cuda.vcxproj">
+      <Project>{22FA3C6C-6960-30A0-B2F9-260FE4A16D93}</Project>
+      <Name>black_scholes_options_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\financial\black_scholes_options_opencl.vcxproj">
+      <Project>{0DDE9301-58C2-39A5-A888-2EA781DA9B07}</Project>
+      <Name>black_scholes_options_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\blas_cpu.vcxproj">
+      <Project>{72C9BFC4-1A4C-3181-8465-B7B95D03F554}</Project>
+      <Name>blas_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\blas_cuda.vcxproj">
+      <Project>{AA392C1F-C1AB-3D98-A65A-E4DB52958CCF}</Project>
+      <Name>blas_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\blas_opencl.vcxproj">
+      <Project>{44E04CC0-D886-3701-BDA7-50AB4AAF7C2D}</Project>
+      <Name>blas_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\brain_segmentation_cpu.vcxproj">
+      <Project>{D4DD79F7-3795-3C09-96CC-4EF6BE23C9A2}</Project>
+      <Name>brain_segmentation_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\brain_segmentation_cuda.vcxproj">
+      <Project>{9720D2A1-2AE0-392B-9B51-FCD58DD0AFF5}</Project>
+      <Name>brain_segmentation_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\brain_segmentation_opencl.vcxproj">
+      <Project>{8F45ABB3-0E28-3FD8-8346-24FF4D91DE1F}</Project>
+      <Name>brain_segmentation_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\cg_cpu.vcxproj">
+      <Project>{2BD015E4-C930-3F34-9F8D-938FDEB37A73}</Project>
+      <Name>cg_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\cg_cuda.vcxproj">
+      <Project>{9B57E1D4-A928-3AD9-9107-363F8CB5FA03}</Project>
+      <Name>cg_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\cg_opencl.vcxproj">
+      <Project>{8EE2FAB8-7217-329C-B3BC-DB38B8F1EDE8}</Project>
+      <Name>cg_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\cholesky_cpu.vcxproj">
+      <Project>{E113D73C-C2A7-367B-96E9-F1B7A177D222}</Project>
+      <Name>cholesky_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\cholesky_cuda.vcxproj">
+      <Project>{890C4AEC-F8F2-3F54-A9C9-A10D33F5F0FF}</Project>
+      <Name>cholesky_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\cholesky_opencl.vcxproj">
+      <Project>{D5C57203-B6C0-329D-925D-637A94259129}</Project>
+      <Name>cholesky_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\confidence_connected_components_cpu.vcxproj">
+      <Project>{18DCBFF9-9DEE-3B28-9CA5-C58D4BB256CA}</Project>
+      <Name>confidence_connected_components_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\confidence_connected_components_cuda.vcxproj">
+      <Project>{20D5FC1E-F704-30E7-AB9D-EE669583F7FB}</Project>
+      <Name>confidence_connected_components_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\confidence_connected_components_opencl.vcxproj">
+      <Project>{154A3496-8A1B-37AA-8392-638FAE925B76}</Project>
+      <Name>confidence_connected_components_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\convolve_cpu.vcxproj">
+      <Project>{839AE8F2-222F-336B-8F94-FFEBA21E850D}</Project>
+      <Name>convolve_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\convolve_cuda.vcxproj">
+      <Project>{E11C36CA-F0F7-3787-ADC9-025EA5D0528D}</Project>
+      <Name>convolve_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\convolve_opencl.vcxproj">
+      <Project>{E0466831-548A-35E2-8A7C-D47DB23A49F9}</Project>
+      <Name>convolve_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_cpu.vcxproj">
+      <Project>{93A9FF90-53C0-38D5-8320-7BD6316F2A0D}</Project>
+      <Name>conway_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_cuda.vcxproj">
+      <Project>{75078E5F-676B-39EB-892D-C2C9EB226BEB}</Project>
+      <Name>conway_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_opencl.vcxproj">
+      <Project>{2D36E9F4-E726-3477-9BA8-BC929850AD2C}</Project>
+      <Name>conway_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_pretty_cpu.vcxproj">
+      <Project>{C15F2FE3-4512-34DD-AD96-F05E0E46E172}</Project>
+      <Name>conway_pretty_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_pretty_cuda.vcxproj">
+      <Project>{419CCBF7-3AB9-314B-9A64-62AC894B9B0E}</Project>
+      <Name>conway_pretty_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_pretty_opencl.vcxproj">
+      <Project>{7D85E04C-2FAE-3D07-A823-847A821CB07E}</Project>
+      <Name>conway_pretty_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\deconvolution_cpu.vcxproj">
+      <Project>{161074A3-FB97-3519-9566-80CF0EA9153B}</Project>
+      <Name>deconvolution_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\deconvolution_cuda.vcxproj">
+      <Project>{052B287E-A260-3D5B-9CE3-1E91BA8CAA32}</Project>
+      <Name>deconvolution_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\deconvolution_opencl.vcxproj">
+      <Project>{94354331-8585-3C2A-9A64-4AB7B18C9378}</Project>
+      <Name>deconvolution_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\deep_belief_net_cpu.vcxproj">
+      <Project>{D9A074E0-D084-3CC9-8149-ABCB073D0C3A}</Project>
+      <Name>deep_belief_net_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\deep_belief_net_cuda.vcxproj">
+      <Project>{F1CE9053-0F74-3892-9BA3-C0FE0AA0941B}</Project>
+      <Name>deep_belief_net_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\deep_belief_net_opencl.vcxproj">
+      <Project>{5BB9DE2A-E391-3306-8B46-ECBB07A9E58B}</Project>
+      <Name>deep_belief_net_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\edge_cpu.vcxproj">
+      <Project>{EE2711A3-B50D-3A4F-9B58-66AB258A7D74}</Project>
+      <Name>edge_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\edge_cuda.vcxproj">
+      <Project>{21107738-AAFB-3BEE-BCF6-B28AFE517751}</Project>
+      <Name>edge_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\edge_opencl.vcxproj">
+      <Project>{D2A59F07-23D0-30D6-A686-C1BFC0635131}</Project>
+      <Name>edge_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\fast_cpu.vcxproj">
+      <Project>{665B2302-064B-3C94-A6F6-156E1D9137B3}</Project>
+      <Name>fast_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\fast_cuda.vcxproj">
+      <Project>{775A981B-FA8B-319C-928C-F6706C3FB5B2}</Project>
+      <Name>fast_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\fast_opencl.vcxproj">
+      <Project>{74468EC5-3CF6-3854-8635-CEC394D608FF}</Project>
+      <Name>fast_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\fft_cpu.vcxproj">
+      <Project>{12D5BAA1-279B-3EAF-9E23-883B0CABF1AE}</Project>
+      <Name>fft_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\fft_cuda.vcxproj">
+      <Project>{5FDADEF7-AF7E-3554-99F9-3A476823C89C}</Project>
+      <Name>fft_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\fft_opencl.vcxproj">
+      <Project>{B8256D1B-3934-3746-8281-ED00271909FF}</Project>
+      <Name>fft_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\field_cpu.vcxproj">
+      <Project>{00DDF31E-38AB-3AE3-90D0-ED87095530EC}</Project>
+      <Name>field_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\field_cuda.vcxproj">
+      <Project>{071CBC13-B19B-3836-9995-E3125EFE7539}</Project>
+      <Name>field_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\field_opencl.vcxproj">
+      <Project>{96A8F1FB-3433-38BA-8F9F-3193B32BA3F1}</Project>
+      <Name>field_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\filters_cpu.vcxproj">
+      <Project>{29A2BFD7-11F7-30D5-8FA7-7ACF8301F50C}</Project>
+      <Name>filters_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\filters_cuda.vcxproj">
+      <Project>{1B129AF9-DCA1-3D1F-8CAA-D49B3F414C38}</Project>
+      <Name>filters_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\filters_opencl.vcxproj">
+      <Project>{2A3618F3-7895-397A-A9D5-D9668D6ECAAB}</Project>
+      <Name>filters_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\fractal_cpu.vcxproj">
+      <Project>{5F41EE77-D459-32D5-8181-4D37031F479A}</Project>
+      <Name>fractal_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\fractal_cuda.vcxproj">
+      <Project>{5E76757C-52C3-3FEE-A22A-44BDFC406A00}</Project>
+      <Name>fractal_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\fractal_opencl.vcxproj">
+      <Project>{13C9D391-D30C-30EF-A881-9A62C30F9B8A}</Project>
+      <Name>fractal_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\geneticalgorithm_cpu.vcxproj">
+      <Project>{AEF6250F-F206-3B49-93D2-3ED72B26E50E}</Project>
+      <Name>geneticalgorithm_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\geneticalgorithm_cuda.vcxproj">
+      <Project>{7D2E21C5-46FD-3220-8329-FB09C5E656DC}</Project>
+      <Name>geneticalgorithm_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\geneticalgorithm_opencl.vcxproj">
+      <Project>{9FC8C613-0688-3A0A-AE86-7E6098B4F5EF}</Project>
+      <Name>geneticalgorithm_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\gradient_diffusion_cpu.vcxproj">
+      <Project>{C0F48D0F-13D4-3D96-827F-27053D4323FA}</Project>
+      <Name>gradient_diffusion_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\gradient_diffusion_cuda.vcxproj">
+      <Project>{B43C9B9F-6211-34FF-9246-D762C7FF147C}</Project>
+      <Name>gradient_diffusion_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\gradient_diffusion_opencl.vcxproj">
+      <Project>{C3950857-FDA7-35DF-9D1F-6850EF7CC87E}</Project>
+      <Name>gradient_diffusion_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\gravity_sim_cpu.vcxproj">
+      <Project>{8DC3FAEB-E12F-3017-8365-C615D94F84F8}</Project>
+      <Name>gravity_sim_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\gravity_sim_cuda.vcxproj">
+      <Project>{9E1B6319-4DB2-3631-A92D-E953343B61AF}</Project>
+      <Name>gravity_sim_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\gravity_sim_opencl.vcxproj">
+      <Project>{3B6573A8-C02E-35D7-8AF5-08C8C516FFBF}</Project>
+      <Name>gravity_sim_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\harris_cpu.vcxproj">
+      <Project>{A7172817-8B1D-3AD2-81E2-CC35D51D1BD8}</Project>
+      <Name>harris_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\harris_cuda.vcxproj">
+      <Project>{52C5CA23-0045-319A-AB83-C9B3FD6E829E}</Project>
+      <Name>harris_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\harris_opencl.vcxproj">
+      <Project>{05FAF026-CD54-37CC-8DF8-5BB98EC66E3C}</Project>
+      <Name>harris_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\helloworld\helloworld_cpu.vcxproj">
+      <Project>{0D29D5AD-2DE7-3956-8B04-CF434E4E11A8}</Project>
+      <Name>helloworld_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\helloworld\helloworld_cuda.vcxproj">
+      <Project>{A5380B4C-C28B-3609-9D5C-FCFA4D6768C1}</Project>
+      <Name>helloworld_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\helloworld\helloworld_opencl.vcxproj">
+      <Project>{ABB74F8B-35F5-365D-ADE9-3CB9502B84B0}</Project>
+      <Name>helloworld_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\financial\heston_model_cpu.vcxproj">
+      <Project>{EA1BC9FE-1DA0-36D4-8E41-546C0A990A04}</Project>
+      <Name>heston_model_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\financial\heston_model_cuda.vcxproj">
+      <Project>{9D297466-6F24-3A1A-91CC-8F11E11039B7}</Project>
+      <Name>heston_model_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\financial\heston_model_opencl.vcxproj">
+      <Project>{5BA57705-DAFE-3BC2-B62B-50D2D12A280B}</Project>
+      <Name>heston_model_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\histogram_cpu.vcxproj">
+      <Project>{F3D678B5-E60E-358A-9C0F-E7015A10C928}</Project>
+      <Name>histogram_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\histogram_cuda.vcxproj">
+      <Project>{51C64820-75FC-3D48-BA1D-6EA4D2498371}</Project>
+      <Name>histogram_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\histogram_opencl.vcxproj">
+      <Project>{3D1ABFFD-6D89-3C29-A6C0-EBCC0DD120BD}</Project>
+      <Name>histogram_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_demo_cpu.vcxproj">
+      <Project>{8FC0C8E2-5757-3F1C-8C88-7FD87F52D765}</Project>
+      <Name>image_demo_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_demo_cuda.vcxproj">
+      <Project>{C3B1AD05-5C60-37DD-8AB2-D88786E46ABD}</Project>
+      <Name>image_demo_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_demo_opencl.vcxproj">
+      <Project>{6E88AA4C-A04B-3C90-BCD1-0DB26C0346F5}</Project>
+      <Name>image_demo_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_editing_cpu.vcxproj">
+      <Project>{B20DA179-B207-3C04-ADF4-796BA0FB9FA8}</Project>
+      <Name>image_editing_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_editing_cuda.vcxproj">
+      <Project>{6732C3EC-EF7F-3363-ADE9-C55BDA68E1E9}</Project>
+      <Name>image_editing_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\image_editing_opencl.vcxproj">
+      <Project>{18D288B5-C873-3A6F-AF1B-1AC3503F56C0}</Project>
+      <Name>image_editing_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\integer_cpu.vcxproj">
+      <Project>{72C8719D-6705-35E6-8FDF-9447B9F6F960}</Project>
+      <Name>integer_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\integer_cuda.vcxproj">
+      <Project>{97B50FBE-8E72-3ACD-959E-81BC228CF1B1}</Project>
+      <Name>integer_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\integer_opencl.vcxproj">
+      <Project>{C9A838DE-6029-3A76-874F-CEF2DD7E94C8}</Project>
+      <Name>integer_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\kmeans_cpu.vcxproj">
+      <Project>{1F0082F5-3FC5-3902-8CF2-C50D8F4FB87E}</Project>
+      <Name>kmeans_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\kmeans_cuda.vcxproj">
+      <Project>{D545CAD3-9ADB-3B3F-924E-548B77C505A6}</Project>
+      <Name>kmeans_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\kmeans_opencl.vcxproj">
+      <Project>{612EBD96-F068-346A-84D8-9A9A7DF13EF2}</Project>
+      <Name>kmeans_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\logistic_regression_cpu.vcxproj">
+      <Project>{EBD7A94C-6F1F-3A43-A9DE-8852B14C6874}</Project>
+      <Name>logistic_regression_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\logistic_regression_cuda.vcxproj">
+      <Project>{E567B392-6FBB-399D-AED3-82E529A72432}</Project>
+      <Name>logistic_regression_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\logistic_regression_opencl.vcxproj">
+      <Project>{A6B0C6E7-60B4-3224-A2EC-0EF7B6842A31}</Project>
+      <Name>logistic_regression_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\lu_cpu.vcxproj">
+      <Project>{99611E6F-7D78-3725-95C0-C967B59D379C}</Project>
+      <Name>lu_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\lu_cuda.vcxproj">
+      <Project>{1EC518B6-9BA3-3EFB-AA34-9DC95AE17A8C}</Project>
+      <Name>lu_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\lu_opencl.vcxproj">
+      <Project>{2D9BCAD5-6BA6-3028-B333-7CDEA84D63B4}</Project>
+      <Name>lu_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\matching_cpu.vcxproj">
+      <Project>{D16F00AF-F927-3B08-924A-B45E27B3A636}</Project>
+      <Name>matching_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\matching_cuda.vcxproj">
+      <Project>{44C45000-D167-34FE-8651-64041442B454}</Project>
+      <Name>matching_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\matching_opencl.vcxproj">
+      <Project>{207DE8B5-791F-37FA-8380-7BEEB3F8326A}</Project>
+      <Name>matching_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\financial\monte_carlo_options_cpu.vcxproj">
+      <Project>{F1FBA958-1A34-3830-BE63-D76D190A43CF}</Project>
+      <Name>monte_carlo_options_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\financial\monte_carlo_options_cuda.vcxproj">
+      <Project>{A47B3418-BAF3-33D2-8EF9-C10355312415}</Project>
+      <Name>monte_carlo_options_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\financial\monte_carlo_options_opencl.vcxproj">
+      <Project>{58106B39-1BE0-35DC-BCF0-188D9BBAADFC}</Project>
+      <Name>monte_carlo_options_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\morphing_cpu.vcxproj">
+      <Project>{00332855-2230-3C22-8327-66A2DEAFA51B}</Project>
+      <Name>morphing_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\morphing_cuda.vcxproj">
+      <Project>{F99B2C50-2044-302D-BEA7-95192CA17B97}</Project>
+      <Name>morphing_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\morphing_opencl.vcxproj">
+      <Project>{26BBB215-B6BE-364D-8A21-5B637FC03D80}</Project>
+      <Name>morphing_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\naive_bayes_cpu.vcxproj">
+      <Project>{FCB85F1D-F1CD-3ABE-8F44-851CC106FAF5}</Project>
+      <Name>naive_bayes_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\naive_bayes_cuda.vcxproj">
+      <Project>{16EDBD46-CD65-3EEE-822E-703E67713A76}</Project>
+      <Name>naive_bayes_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\naive_bayes_opencl.vcxproj">
+      <Project>{DF8E7D08-2B80-39C0-8D81-63BD1C3A1731}</Project>
+      <Name>naive_bayes_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\neural_network_cpu.vcxproj">
+      <Project>{81B47E15-3CA9-305F-A528-7CF5A4F39794}</Project>
+      <Name>neural_network_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\neural_network_cuda.vcxproj">
+      <Project>{DBBADD3C-2B4A-3F59-AB5E-992915034E45}</Project>
+      <Name>neural_network_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\neural_network_opencl.vcxproj">
+      <Project>{E032F9C2-8BB2-37AC-9B26-14B85FAC4976}</Project>
+      <Name>neural_network_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\optical_flow_cpu.vcxproj">
+      <Project>{B73ACD3D-A669-34A3-BAB6-2D07EBE7FA59}</Project>
+      <Name>optical_flow_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\optical_flow_cuda.vcxproj">
+      <Project>{5B91FCC9-2622-3D9D-90BA-07AADB3DD1CD}</Project>
+      <Name>optical_flow_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\optical_flow_opencl.vcxproj">
+      <Project>{E0EA6B5B-1DA0-3A6C-B117-D5257A5DAD67}</Project>
+      <Name>optical_flow_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\perceptron_cpu.vcxproj">
+      <Project>{D57DD231-8B6E-3239-BF49-BFB5CF79938F}</Project>
+      <Name>perceptron_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\perceptron_cuda.vcxproj">
+      <Project>{33DEC6B4-49AB-3513-A792-F82A992F23EB}</Project>
+      <Name>perceptron_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\perceptron_opencl.vcxproj">
+      <Project>{AE03FF90-2BB7-313E-9260-3C2103DB0ED0}</Project>
+      <Name>perceptron_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\pi_cpu.vcxproj">
+      <Project>{141C367F-0A4A-32EF-A6CD-DD0B680CC756}</Project>
+      <Name>pi_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\pi_cuda.vcxproj">
+      <Project>{1DD3FD03-55A5-3B6E-95FC-194B4FCE2C60}</Project>
+      <Name>pi_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\benchmarks\pi_opencl.vcxproj">
+      <Project>{6850B54E-E067-3D29-B348-093723050DC7}</Project>
+      <Name>pi_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot2d_cpu.vcxproj">
+      <Project>{0F659C2A-F546-3F79-B3CC-008B48B8EC88}</Project>
+      <Name>plot2d_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot2d_cuda.vcxproj">
+      <Project>{68FB73FE-1770-3ADC-B175-E993C2D4FC06}</Project>
+      <Name>plot2d_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot2d_opencl.vcxproj">
+      <Project>{51D27AEF-DFB9-3DC6-AB69-88492653F047}</Project>
+      <Name>plot2d_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot3_cpu.vcxproj">
+      <Project>{03234ACC-A5E6-3B51-B082-83ED1087C61D}</Project>
+      <Name>plot3_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot3_cuda.vcxproj">
+      <Project>{A649CB64-BF88-30BA-8D28-B1B76590FC85}</Project>
+      <Name>plot3_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot3_opencl.vcxproj">
+      <Project>{E08B93F1-54EE-37FF-91EA-60E75E4C879C}</Project>
+      <Name>plot3_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\pyramids_cpu.vcxproj">
+      <Project>{8DE54261-797E-3D85-BC6E-5EC05DAD2E6A}</Project>
+      <Name>pyramids_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\pyramids_cuda.vcxproj">
+      <Project>{44957ACC-FEF3-3060-A07D-9263A5AE8891}</Project>
+      <Name>pyramids_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\image_processing\pyramids_opencl.vcxproj">
+      <Project>{1A27B471-5870-3788-BEDB-9C60926ACEDA}</Project>
+      <Name>pyramids_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\qr_cpu.vcxproj">
+      <Project>{730C64E2-8C79-321E-B9A9-359A8A74EFA0}</Project>
+      <Name>qr_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\qr_cuda.vcxproj">
+      <Project>{CE61A351-8111-3529-92DC-4754BA6631A7}</Project>
+      <Name>qr_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\qr_opencl.vcxproj">
+      <Project>{5BE99453-D82D-3B47-B02D-57F1F4662890}</Project>
+      <Name>qr_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\rainfall_cpu.vcxproj">
+      <Project>{D7BD0D1E-E59F-36A5-A2B5-EF39B8217A5D}</Project>
+      <Name>rainfall_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\rainfall_cuda.vcxproj">
+      <Project>{5A2C8872-AFF1-3BCF-B90F-DFF8C838EFC7}</Project>
+      <Name>rainfall_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\rainfall_opencl.vcxproj">
+      <Project>{2630DE4C-ADC8-3436-A509-297A44AF2629}</Project>
+      <Name>rainfall_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\rbm_cpu.vcxproj">
+      <Project>{A8EEB37A-D1C3-33E8-9BD8-DABDC46AD3BA}</Project>
+      <Name>rbm_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\rbm_cuda.vcxproj">
+      <Project>{BFF86536-7177-3834-88D5-63228DCE8F2D}</Project>
+      <Name>rbm_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\rbm_opencl.vcxproj">
+      <Project>{95234E79-AFE4-3FB5-A785-4E0F37FF107F}</Project>
+      <Name>rbm_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\softmax_regression_cpu.vcxproj">
+      <Project>{BDCDC859-1896-3F15-9174-4B7A3B8E9654}</Project>
+      <Name>softmax_regression_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\softmax_regression_cuda.vcxproj">
+      <Project>{18F562FA-D895-34BD-929F-53DB415AA144}</Project>
+      <Name>softmax_regression_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\machine_learning\softmax_regression_opencl.vcxproj">
+      <Project>{C9DA4A48-C050-336D-9CFF-0941D93439F6}</Project>
+      <Name>softmax_regression_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\surface_cpu.vcxproj">
+      <Project>{F552A441-C08F-3640-B3F2-34CD53C9063C}</Project>
+      <Name>surface_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\surface_cuda.vcxproj">
+      <Project>{2015364A-F40F-320E-A3AA-80AC2B75B166}</Project>
+      <Name>surface_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\surface_opencl.vcxproj">
+      <Project>{1B5BC8D9-83D8-3801-A649-8915DCB68F7C}</Project>
+      <Name>surface_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\susan_cpu.vcxproj">
+      <Project>{68CBCFE0-9781-309D-A4DF-646E56972A1A}</Project>
+      <Name>susan_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\susan_cuda.vcxproj">
+      <Project>{16D90CEE-2F24-3813-817E-9E4F5A1A5A84}</Project>
+      <Name>susan_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\computer_vision\susan_opencl.vcxproj">
+      <Project>{9575A141-EC9B-366C-91F3-B1A966C0C414}</Project>
+      <Name>susan_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\svd_cpu.vcxproj">
+      <Project>{790AEB05-6461-357C-A3BB-A34538DE3A47}</Project>
+      <Name>svd_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\svd_cuda.vcxproj">
+      <Project>{5A0F59FA-46CE-3787-B272-28BAAE74FCBD}</Project>
+      <Name>svd_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\lin_algebra\svd_opencl.vcxproj">
+      <Project>{543B1471-6A81-383A-A35B-FEF7F933DA89}</Project>
+      <Name>svd_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\pde\swe_cpu.vcxproj">
+      <Project>{20C61AEE-7C43-3749-8192-59777F20D7FE}</Project>
+      <Name>swe_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\pde\swe_cuda.vcxproj">
+      <Project>{A11BDAC9-16B6-3869-9BEB-9C0374B39E21}</Project>
+      <Name>swe_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\pde\swe_opencl.vcxproj">
+      <Project>{95153EB9-6FB6-3E16-B152-6D1DF93AE60A}</Project>
+      <Name>swe_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\vectorize_cpu.vcxproj">
+      <Project>{3A13666C-163C-3B29-ADE3-019EA0CE7A47}</Project>
+      <Name>vectorize_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\vectorize_cuda.vcxproj">
+      <Project>{D5CF4794-9307-3DAB-A794-D8C1421C10A0}</Project>
+      <Name>vectorize_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\getting_started\vectorize_opencl.vcxproj">
+      <Project>{6C25CB9F-C734-3990-BA2C-F9D4E353732D}</Project>
+      <Name>vectorize_opencl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

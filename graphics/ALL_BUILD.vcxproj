@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{28F4CFD8-92B3-3E10-954C-45F7C9B7AFC5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Arrayfire v10\examples\graphics\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Arrayfire v10/examples/graphics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/graphics/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Arrayfire v10\examples\build\graphics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Arrayfire v10/examples/graphics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/graphics/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Arrayfire v10\examples\build\graphics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Arrayfire v10/examples/graphics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/graphics/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Arrayfire v10\examples\build\graphics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Arrayfire v10/examples/graphics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\dev\CMake\bin\cmake.exe "-SC:/Arrayfire v10/examples" "-BC:/Arrayfire v10/examples/build" --check-stamp-file "C:/Arrayfire v10/examples/build/graphics/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCPUTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireCUDATargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfig.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireConfigVersion.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireOpenCLTargets.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets-relwithdebinfo.cmake;C:\Program Files\ArrayFire\v3\cmake\ArrayFireUnifiedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Arrayfire v10\examples\build\graphics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\ZERO_CHECK.vcxproj">
+      <Project>{AAD07D42-7BEF-364E-A642-1182DDF22A69}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_cpu.vcxproj">
+      <Project>{93A9FF90-53C0-38D5-8320-7BD6316F2A0D}</Project>
+      <Name>conway_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_cuda.vcxproj">
+      <Project>{75078E5F-676B-39EB-892D-C2C9EB226BEB}</Project>
+      <Name>conway_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_opencl.vcxproj">
+      <Project>{2D36E9F4-E726-3477-9BA8-BC929850AD2C}</Project>
+      <Name>conway_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_pretty_cpu.vcxproj">
+      <Project>{C15F2FE3-4512-34DD-AD96-F05E0E46E172}</Project>
+      <Name>conway_pretty_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_pretty_cuda.vcxproj">
+      <Project>{419CCBF7-3AB9-314B-9A64-62AC894B9B0E}</Project>
+      <Name>conway_pretty_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\conway_pretty_opencl.vcxproj">
+      <Project>{7D85E04C-2FAE-3D07-A823-847A821CB07E}</Project>
+      <Name>conway_pretty_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\field_cpu.vcxproj">
+      <Project>{00DDF31E-38AB-3AE3-90D0-ED87095530EC}</Project>
+      <Name>field_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\field_cuda.vcxproj">
+      <Project>{071CBC13-B19B-3836-9995-E3125EFE7539}</Project>
+      <Name>field_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\field_opencl.vcxproj">
+      <Project>{96A8F1FB-3433-38BA-8F9F-3193B32BA3F1}</Project>
+      <Name>field_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\fractal_cpu.vcxproj">
+      <Project>{5F41EE77-D459-32D5-8181-4D37031F479A}</Project>
+      <Name>fractal_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\fractal_cuda.vcxproj">
+      <Project>{5E76757C-52C3-3FEE-A22A-44BDFC406A00}</Project>
+      <Name>fractal_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\fractal_opencl.vcxproj">
+      <Project>{13C9D391-D30C-30EF-A881-9A62C30F9B8A}</Project>
+      <Name>fractal_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\gravity_sim_cpu.vcxproj">
+      <Project>{8DC3FAEB-E12F-3017-8365-C615D94F84F8}</Project>
+      <Name>gravity_sim_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\gravity_sim_cuda.vcxproj">
+      <Project>{9E1B6319-4DB2-3631-A92D-E953343B61AF}</Project>
+      <Name>gravity_sim_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\gravity_sim_opencl.vcxproj">
+      <Project>{3B6573A8-C02E-35D7-8AF5-08C8C516FFBF}</Project>
+      <Name>gravity_sim_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\histogram_cpu.vcxproj">
+      <Project>{F3D678B5-E60E-358A-9C0F-E7015A10C928}</Project>
+      <Name>histogram_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\histogram_cuda.vcxproj">
+      <Project>{51C64820-75FC-3D48-BA1D-6EA4D2498371}</Project>
+      <Name>histogram_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\histogram_opencl.vcxproj">
+      <Project>{3D1ABFFD-6D89-3C29-A6C0-EBCC0DD120BD}</Project>
+      <Name>histogram_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot2d_cpu.vcxproj">
+      <Project>{0F659C2A-F546-3F79-B3CC-008B48B8EC88}</Project>
+      <Name>plot2d_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot2d_cuda.vcxproj">
+      <Project>{68FB73FE-1770-3ADC-B175-E993C2D4FC06}</Project>
+      <Name>plot2d_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot2d_opencl.vcxproj">
+      <Project>{51D27AEF-DFB9-3DC6-AB69-88492653F047}</Project>
+      <Name>plot2d_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot3_cpu.vcxproj">
+      <Project>{03234ACC-A5E6-3B51-B082-83ED1087C61D}</Project>
+      <Name>plot3_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot3_cuda.vcxproj">
+      <Project>{A649CB64-BF88-30BA-8D28-B1B76590FC85}</Project>
+      <Name>plot3_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\plot3_opencl.vcxproj">
+      <Project>{E08B93F1-54EE-37FF-91EA-60E75E4C879C}</Project>
+      <Name>plot3_opencl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\surface_cpu.vcxproj">
+      <Project>{F552A441-C08F-3640-B3F2-34CD53C9063C}</Project>
+      <Name>surface_cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\surface_cuda.vcxproj">
+      <Project>{2015364A-F40F-320E-A3AA-80AC2B75B166}</Project>
+      <Name>surface_cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Arrayfire v10\examples\build\graphics\surface_opencl.vcxproj">
+      <Project>{1B5BC8D9-83D8-3801-A649-8915DCB68F7C}</Project>
+      <Name>surface_opencl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

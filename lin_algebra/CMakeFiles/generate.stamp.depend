@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+C:/Arrayfire v10/examples/lin_algebra/CMakeLists.txt
+C:/Program Files/ArrayFire/v3/cmake/ArrayFireCPUTargets-relwithdebinfo.cmake
+C:/Program Files/ArrayFire/v3/cmake/ArrayFireCPUTargets.cmake
+C:/Program Files/ArrayFire/v3/cmake/ArrayFireCUDATargets-relwithdebinfo.cmake
+C:/Program Files/ArrayFire/v3/cmake/ArrayFireCUDATargets.cmake
+C:/Program Files/ArrayFire/v3/cmake/ArrayFireConfig.cmake
+C:/Program Files/ArrayFire/v3/cmake/ArrayFireConfigVersion.cmake
+C:/Program Files/ArrayFire/v3/cmake/ArrayFireOpenCLTargets-relwithdebinfo.cmake
+C:/Program Files/ArrayFire/v3/cmake/ArrayFireOpenCLTargets.cmake
+C:/Program Files/ArrayFire/v3/cmake/ArrayFireUnifiedTargets-relwithdebinfo.cmake
+C:/Program Files/ArrayFire/v3/cmake/ArrayFireUnifiedTargets.cmake
